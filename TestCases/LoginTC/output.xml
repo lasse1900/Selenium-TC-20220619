@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220619 14:30:16.388" rpa="false" schemaversion="3">
+<suite id="s1" name="TC 003 BDD" source="C:\Users\ett19411\OneDrive - Etteplan Oyj\Desktop\Learn_RF_052022\Section23\TestCases\LoginTC\TC_003_BDD.robot">
+<kw name="Before Each Test Suite" library="Resources4" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220619 14:30:16.567" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220619 14:30:16.567" endtime="20220619 14:30:16.567"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:16.567" endtime="20220619 14:30:16.567"/>
+</kw>
+<test id="s1-t1" name="Test Case in BDD Format" line="18">
+<kw name="Start Browser and Maximize" library="Resources4" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220619 14:30:16.568" level="INFO">Opening browser 'chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20220619 14:30:16.568" endtime="20220619 14:30:18.735"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220619 14:30:18.735" endtime="20220619 14:30:18.853"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:16.568" endtime="20220619 14:30:18.853"/>
+</kw>
+<kw name="Given Start Browser and Maximize" library="Resources4">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220619 14:30:18.854" level="INFO">Opening browser 'chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20220619 14:30:18.853" endtime="20220619 14:30:20.845"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220619 14:30:20.845" endtime="20220619 14:30:20.969"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:18.853" endtime="20220619 14:30:20.969"/>
+</kw>
+<kw name="When Create Folder at Runtime" library="Resources4">
+<arg>robot12</arg>
+<arg>test</arg>
+<kw name="Create Folder" library="UserKeywords">
+<arg>${foldername}</arg>
+<status status="PASS" starttime="20220619 14:30:20.970" endtime="20220619 14:30:20.971"/>
+</kw>
+<kw name="Create Sub Folder" library="UserKeywords">
+<arg>${foldername}</arg>
+<arg>${subfoldername}</arg>
+<status status="PASS" starttime="20220619 14:30:20.971" endtime="20220619 14:30:20.971"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"Task Done Succesfully"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220619 14:30:20.971" level="INFO">"Task Done Succesfully"</msg>
+<status status="PASS" starttime="20220619 14:30:20.971" endtime="20220619 14:30:20.972"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:20.970" endtime="20220619 14:30:20.972"/>
+</kw>
+<kw name="Then Concatenate Username and Password" library="Resources4">
+<arg>lasse</arg>
+<arg>123456</arg>
+<kw name="Concatenate Two Values" library="UserKeywords">
+<var>${resultval}</var>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<msg timestamp="20220619 14:30:20.973" level="INFO">${resultval} = lasse 123456</msg>
+<status status="PASS" starttime="20220619 14:30:20.972" endtime="20220619 14:30:20.973"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${resultval}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220619 14:30:20.973" level="INFO">lasse 123456</msg>
+<status status="PASS" starttime="20220619 14:30:20.973" endtime="20220619 14:30:20.973"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:20.972" endtime="20220619 14:30:20.973"/>
+</kw>
+<kw name="Close Browser Window" library="Resources4" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20220619 14:30:20.977" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20220619 14:30:20.974" endtime="20220619 14:30:20.977"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220619 14:30:20.977" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20220619 14:30:20.977" endtime="20220619 14:30:20.977"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220619 14:30:20.978" endtime="20220619 14:30:23.080"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:20.974" endtime="20220619 14:30:23.080"/>
+</kw>
+<tag>ALL_TC</tag>
+<tag>DFLT</tag>
+<status status="PASS" starttime="20220619 14:30:16.567" endtime="20220619 14:30:23.080"/>
+</test>
+<kw name="After Each Test Case" library="Resources4" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220619 14:30:23.082" level="INFO">After Each Test Case</msg>
+<status status="PASS" starttime="20220619 14:30:23.082" endtime="20220619 14:30:23.082"/>
+</kw>
+<status status="PASS" starttime="20220619 14:30:23.081" endtime="20220619 14:30:23.082"/>
+</kw>
+<doc>This file having testcase of testing API functionality</doc>
+<status status="PASS" starttime="20220619 14:30:16.389" endtime="20220619 14:30:23.082"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">ALL_TC</stat>
+<stat pass="1" fail="0" skip="0">DFLT</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 003 BDD">TC 003 BDD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
